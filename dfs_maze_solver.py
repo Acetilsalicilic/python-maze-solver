@@ -48,7 +48,7 @@ def dfs(adj):
         
         
 
-adj = readMaze('./maze2.txt', True)
+adj = readMaze('./maze3.txt', True)
 lastNode = dfs(adj)
 
 path = reconstructPath(lastNode)
