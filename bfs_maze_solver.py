@@ -20,6 +20,7 @@ def bfs(adj):
     # Parent variable
     parentNode = None
 
+    # Add teh first node to the frontier
     frontier.push(startNode)
 
     # The BFS itself:
@@ -45,7 +46,7 @@ def bfs(adj):
             return actionNode
         # Das end
 
-adj = readMaze('./maze1.txt', True)
+adj = readMaze('./maze3.txt', True)
 lastNode = bfs(adj)
 
 if (lastNode is None):
